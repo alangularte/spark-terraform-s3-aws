@@ -8,6 +8,6 @@ terraform {
   backend "s3" {
     bucket = "terraform-state-alangularte"
     key = "state/terraform.tfstate"
-    region = "us-esat-2"
+    region = "us-east-2"
   }
 }
