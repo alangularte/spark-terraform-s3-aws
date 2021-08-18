@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cd infrastructure
 
 # Declara variavel para reutilização nas validações do diretório
