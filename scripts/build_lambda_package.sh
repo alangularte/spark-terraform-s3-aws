@@ -21,7 +21,7 @@ fi
 FILE_REQUIREMENTS=../etl/lambda_requirements.txt
 
 # Verifica se o arquivo lambda_requirements existe
-if [ -f $FILE_REQUIREMENTS]
+if [ -f $FILE_REQUIREMENTS ]
 then
     echo "====================================="
     echo "Instalando dependências localizadas no "$FILE_REQUIREMENTS""
