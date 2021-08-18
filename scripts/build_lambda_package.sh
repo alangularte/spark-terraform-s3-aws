@@ -36,7 +36,7 @@ cd $PACKAGE
 LAMBDA_FUNCTION=../../etl/lambda_funcion.py
 
 # Verifica se o arquivo lambda_function.py existe
-if [ -f $LAMBDA_FUNCTION]
+if [ -f $LAMBDA_FUNCTION ]
 then
     echo "====================================="
     echo "Copiando função Handler..."
