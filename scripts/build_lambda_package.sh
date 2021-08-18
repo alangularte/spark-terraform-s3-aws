@@ -33,7 +33,7 @@ fi
 cd $PACKAGE
 
 # Declara variavel que localiza a função lambda para reutilização no código
-LAMBDA_FUNCTION=../../etl/lambda_funcion.py
+LAMBDA_FUNCTION=../../etl/lambda_function.py
 
 # Verifica se o arquivo lambda_function.py existe
 if [ -f $LAMBDA_FUNCTION ]
