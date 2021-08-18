@@ -6,7 +6,7 @@ cd infrastructure
 PACKAGE="package"
 
 # Cria o diretório e instala as dependências da funcção lambda
-if [ -d $PACKAGE]
+if [ -d $PACKAGE ]
 then
     echo "O diretório "$PACKAGE" já existe."
 else
