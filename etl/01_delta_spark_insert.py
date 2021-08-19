@@ -18,7 +18,7 @@ enem = (
     .option("inferSchema", True)
     .option("header", True)
     .option("delimiter", ";")
-    .load("s3://datalake-alangularte-enem-tf-producao-676132584393/raw-data/enem")
+    .load("s3://datalake-alangularte-igti-edc/row-data/enem/")
 )
 
 # Escreve a tabela em staging em formato delta
