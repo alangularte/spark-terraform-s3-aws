@@ -3,7 +3,7 @@
 #Cria um novo S3 na AWS
 resource "aws_s3_bucket" "datalake" {
   # Parametros de configuracao do recurso escolhido
-  bucket = "${var.base_bucket_name}-${var.ambiente}-${var.numero_conta}" #variaveis extraidas do arquivo variables.tf
+  bucket = "${var.base_bucket_name}" #variaveis extraidas do arquivo variables.tf
   acl    = "private"                                                     #access control list
 
   server_side_encryption_configuration {
