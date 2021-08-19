@@ -25,7 +25,7 @@ from delta.tables import *
 logger.info("Generating new data...")
 enemnovo = (
     spark.read.format("delta")
-    .load("s3://datalake-alangularte-enem-tf-producao-676132584393/staging-zone/enem")
+    .load("s3://datalake-alangularte-enem-tf/staging-zone/enem")
 )
 
 # Define algumas inscricoes (chaves) que serao alteradas
@@ -87,7 +87,7 @@ enemnovo = enemnovo.withColumn("NO_MUNICIPIO_RESIDENCIA", lit("NOVA CIDADE")).wi
 
 
 logger.info("Get old Enem data from Delta table...")
-enemvelho = DeltaTable.forPath(spark, "s3://datalake-alangularte-enem-tf-producao-676132584393/staging-zone/enem")
+enemvelho = DeltaTable.forPath(spark, "s3://datalake-alangularte-enem-tf/staging-zone/enem")
 
 
 logger.info("Execute UPSERT...")
